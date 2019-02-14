@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Registratieformulier</title>
+</head>
+  <meta charset="utf-8">
+  <meta name="author" content="Ivan Dellobel" />
+  <meta name="keywords" lang="nl" content="registreer, gebruikersnaam, paswoord, familienaam, gemeente  " />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" href="../images/portfolio.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../images/portfolio.ico" type="image/x-icon" />
+  <link href="../CSS/stijl.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/formulier.css" rel="stylesheet" type="text/css" />
+  <script src="../Java/mijnEersteScripts.js"></script>
+  
+<body>
+    <header><a href="../index.html"><h1>REGISTREER</h1></a></header>
+    <div id="registratieFormulier">
+        <h1>Registreer account</h1>
+        <h2>Let er op: Zorg ervoor dat uw gegevens correct ingevuld zijn vooraleer het te verzenden.
+                De velden gemarkeerd met een <span class="rood">*</span> dienen ingevuld!</h2>
+            <form action="../index.html" method="post" >
+            <fieldset>
+                
+                <div>
+                    <label for="username">Gebruikersnaam <span class="rood">*</span> : </label>
+                    <input type="text" id="username" required="required" placeholder="Geef een gebruikersnaam" tabindex="1"/>
+                </div>
+                <div>
+                    <label for="pwd">Paswoord <span class="rood">*</span> : </label>
+                    <input name="paswoord" id="psw1" type="password" required="required" placeholder="Voer een paswoord in" tabindex="2">
+                </div>
+                <div>
+                    <label for="bevestigpwd">Bevestig Paswoord <span class="rood">*</span> :</label>
+                    <input name="bevpaswoord" id="bpsw2" onkeyup="checkPass(); return false;" type="password" required="required" tabindex="3">
+                    <i class="fa fa-eye  "  onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" ></i>
+                    <span class="bevestigBericht" id="OKofNOK"></span>
+                </div> 
+                <div>
+                    <label for="voornaam">Voornaam <span class="rood">*</span> : </label>
+                    <input type="text" id="voornaam" required="required" value='' tabindex="4"/>
+                </div>
+                <div>
+                    <label for="other_names">Familienaam <span class="rood">*</span> : </label>
+                    <input type="text" id="familienaam" required="required" value=''  tabindex="5" />
+                </div>
+                <div>
+                    <label for="dob">Geboortedatum <span class="rood">*</span> : </label>
+                    <input type="date" id="dob" required="required"  value='' tabindex="6" />
+                </div>
+                <div>
+                    <label for="email">Email <span class="rood">*</span> : </label>
+                    <input type="email" id="email" required="required" placeholder="email@voorbeeld" "tabindex="7"/>
+                </div>
+                <div>
+                    <label for="tel">Telefoon: </label>
+                    <input type="tel" id="tel" value='' tabindex="8" />
+                </div>
+                <div>
+                    <label for="add">Straat + nr <span class="rood">*</span> : </label>
+                    <input type="text"id="add" required="required" value='' tabindex="9" />
+                </div>
+                <div>
+                    <label for="ptc">Postnummer <span class="rood">*</span> : </label>
+                    <input type="text" id="ptc" required="required" value='' tabindex="10"/>
+                </div>
+                <div>
+                    <label for="gem">Gemeente <span class="rood">*</span> :</label>
+                    <input type="text" id="gem" required="required" value='' tabindex="11"/>
+                </div>
+                
+                <input type="submit" value="Verstuur"/>
+            </fieldset>
+                
+            </form>
+        </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Portfolio van Ivan Dellobel</title>
+	<meta charset="utf-8"/>
+    <meta name="keywords" lang="nl" content="bibliografie,contactinformatie,portfolio" />
+	<meta name="author" content="Ivan Dellobel" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+   	<meta name="viewport" content="width:device-width,initial-scale=1.0" />
+	<link rel="icon" href="images/portfolio.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/portfolio.ico" type="image/x-icon" />
+    <link href="CSS/stijl.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/formulier.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body >
+    <nav >
+        
+     <ul >
+        <li>
+            <a href="#openModal">Login</a>
+        </li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Contact</a>
+            <div class="dropdown-content" >
+                 <a href="#ct">Portfolio</a>
+                 <a href="albums/contactinformatie.html">Contactgegevens</a>
+                 <a href="albums/contactFormulier.html">Contacteer mij</a>
+            </div>
+        </li>
+        <li><a href="#pf">Werk</a></li>
+        <li><a href="#mz">Over mezelf</a></li>
+     </ul>
+    </nav>    
+<header><h1>PORTFOLIO</h1></header>
+
+	    <div id="openModal" class="modalDialog"  >
+            <div >
+                <a href="#close" title="Close" class="close">X</a>
+				<h1>Login</h1>
+                <form action="index.html" method="post" >
+				<fieldset id="login" title="loginForm">
+			       <label for="txtEmail">E-mail :</label>
+			       <input type="email" id="txtEmail" name="email" value="" placeholder="email@voorbeeld"  required="required">
+            
+                    <label for="txtOnderwerp">paswoord :</label>
+			        <input type="password" id="txtpassword" name="password" value= "" placeholder="paswoord" required="required">
+					
+				    <input type="checkbox" name="Onthoud me" id="remember me" value="A"><span >Onthoud paswoord </span>
+			    	<br/>
+					<p ><a href="albums/registratieFormulier.html">Nog geen account?</a></p>
+					<br/>
+					<p ><a href="#">Paswoord vergeten?</a></p>
+					<br/>
+			        <input type="submit" value="Login" />
+				</fieldset>  
+		        </form>
+			</div>
+		</div>
+
+<main id="main">
+     <aside >
+        <div class="headerFoto"><p class="headerFoto arrow-up"></p></div>
+        <div id="fr" class="fotoreeks">
+            <div class="fotobox"><img src="images/bijen.jpg" title="bijen in honingraat" alt="foto bijen" width="180px" height="180px"/></></div>
+            <div class="fotobox"><img src="images/maya.png" title="Maya" alt="Maya de bij" width="180px" height="180px"/></div>
+            <div class="fotobox"><img src="images/parkeren.png" title="verkeersbord Parkeren" alt="verkeersbord parkeren" width="180px" height="180px"/></div>
+            <div class="fotobox"><img src="images/plaat.jpg" title="LP" alt="gouden phonoplaat" width="180px" height="180px" /></div>
+        </div> 
+        <div class="fotoreeksPijlOmlaag"><p class="arrow-down"></p></div>     
+    </aside>
+   
+<section >
+    <article id="article" >
+        <table width= "100%"  >
+            <colgroup>
+                <col width="50%">
+            </colgroup>
+            <colgroup>
+            <col span="2" width="25%">
+            </colgroup>
+        <tr>
+            <th colspan="3" style="vertical-align:text-top; text-align: center; margin: 0px" ><h1>Ivan Dellobel</h1></th>
+        </tr>
+        <tr>
+            <td rowspan="3" style="vertical-align: middle; text-align: center; " ><img src="images/IvanPgE.jpg" title="Ivan Dellobel"
+            alt="witruimte" class="fotofirst" /></td>
+            <td style="vertical-align: middle; text-align: justify"><h3>Woonplaats : </h3></td>
+            <td style="vertical-align: middle; text-align: left"><h3> Nieuwpoort </h3></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; text-align: justify"><h3>Land:</h3></td>
+            <td style="vertical-align: middle; text-align: left"><h3>België</h3></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; text-align: justify"><h3>Geboortejaar:</h3></td>
+            <td style="vertical-align: middle; text-align: left"><h3>1962</h3></td>
+        </tr>
+        </table>     
+    </article>
+    <article id="none" >
+        <ul id="Bibliogafie" >
+            <li class="Bibliografie" id="mz"><a href="albums/bibliografie.html" ><h2>Over mezelf</h2></a></li>
+            <li class="Bibliografie" id="pf"><a href="albums/portfolio.html"><h2>Werk</h2></a></li>
+            <li class="Bibliografie" id="ct"><a href="albums/contactinformatie.html" ><h2>Contact</h2></a></li>
+        </ul>
+    </article>
+    
+</section>
+
+
+ </main>
+
+
+     
+<footer >
+<h4 > &copy; 2018  Ivan Dellobel</h4>    
+</footer>
+
+</body>
+</html>
